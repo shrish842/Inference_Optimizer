@@ -1,0 +1,7 @@
+# requirements.txt
+
+# Core machine learning framework
+tensorflow>=2.12.0 # Recommend pinning to a specific version, e.g., tensorflow==2.10.0
+
+# Numerical computing library
+numpy      # Recommend pinning to a specific version, e.g., numpy==1.23.5
