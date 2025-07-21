@@ -1,7 +1,15 @@
-# requirements.txt
+tensorflow==2.10.0 # Or your specific version
+numpy==1.23.5      # Or your specific version
 
-# Core machine learning framework
-tensorflow>=2.12.0 # Recommend pinning to a specific version, e.g., tensorflow==2.10.0
+# For PyTorch models and Transformers library
+torch==1.13.1      # Or your specific version (ensure CUDA version if using GPU)
+transformers==4.26.1 # Or your specific version (compatible with your model)
+sentencepiece==0.1.97 # Often a dependency for Hugging Face tokenizers
 
-# Numerical computing library
-numpy      # Recommend pinning to a specific version, e.g., numpy==1.23.5
+# For ONNX runtime inference and quantization
+onnxruntime==1.14.1 # Or your specific version
+onnxruntime-tools==1.7.0 # Tools for ONNX, might be useful for some quantization utilities
+# onnxruntime-extensions # Optional: for some custom ops or advanced scenarios, but not strictly needed for basic INT8 quantization
+
+# For converting TensorFlow/Keras models to ONNX
+tf2onnx==1.14.0    # Or your specific version
